@@ -5,7 +5,7 @@ from datetime import datetime
 #border######
 
 
-class MoneyTrackerGUI:
+class MoneyTracker:
     def __init__(self, root):
         self.root = root
         self.root.title("Money Spending Tracker")
@@ -95,7 +95,7 @@ class MoneyTrackerGUI:
 
 def main():
     root = ThemedTk(theme="clearlooks")  # Use a theme of your choice
-    app = MoneyTrackerGUI(root)
+    app = MoneyTracker(root)
     root.mainloop()
 
 if __name__ == "__main__":
