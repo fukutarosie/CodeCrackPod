@@ -25,10 +25,10 @@ class MoneyTrackerGUI:
         self.style = ttk.Style()
 
         # Configure label style
-        self.style.configure("Label.TLabel", font=("Comic Sans", 12), foreground="white")
+        self.style.configure("Label.TLabel", font=("Comic Sans", 12), foreground="black")
 
         # Configure entry style
-        self.style.configure("Entry.TEntry", font=("Comic Sans", 12), foreground="white")
+        self.style.configure("Entry.TEntry", font=("Comic Sans", 12), foreground="black")
 
         # Configure button style
         self.style.configure("Button.TButton", font=("Comic Sans", 12), foreground="white", background="black")
@@ -94,7 +94,7 @@ class MoneyTrackerGUI:
             self.treeview.insert("", "end", values=transaction)
 
 def main():
-    root = ThemedTk(theme="equilux")  # Use a theme of your choice
+    root = ThemedTk(theme="clearlooks")  # Use a theme of your choice
     app = MoneyTrackerGUI(root)
     root.mainloop()
 
