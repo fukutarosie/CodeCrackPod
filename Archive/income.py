@@ -25,13 +25,13 @@ class IncomeTrackerGUI:
         self.style = ttk.Style()
 
         # Configure label style
-        self.style.configure("Label.TLabel", font=("Comic Sans", 12), foreground="white")
+        self.style.configure("Label.TLabel", font=("Comic Sans", 12), foreground="black")
 
         # Configure entry style
         self.style.configure("Entry.TEntry", font=("Comic Sans", 12), foreground="white")
 
         # Configure button style
-        self.style.configure("Button.TButton", font=("Comic Sans", 12), foreground="white", background="black")
+        self.style.configure("Button.TButton", font=("Comic Sans", 12), foreground="black", background="black")
 
         # Configure treeview style
         self.style.configure("Treeview.Treeview", font=("Comic Sans", 12), foreground="black", background="lightyellow")
